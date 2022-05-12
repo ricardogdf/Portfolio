@@ -8,6 +8,10 @@ const Header = styled.header`
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--background)
 `
 
 export default Header;

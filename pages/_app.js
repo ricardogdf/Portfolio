@@ -1,89 +1,46 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { ThemeProvider as NextThemeProvider } from 'next-themes'
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
 *{
   margin: 0;
   padding: 0;
 }
 
-body {
-    "Space Grotesk", serif;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-weight: 500;
-  }
+:root{
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --hoverWorked: rgb(185 194 195 / 10%);
+}
 
-  img{
+[data-theme='dark']{
+  --background: #000000;
+  --foreground: #FFFFFF;
+  --hoverWorked: rgb(22 21 21 / 10%);
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-weight: 500;
+}
+
+svg path {
+  fill: var(--foreground)
+}
+
+img{
     max-width: 100%;
     height: auto;
     display: block; 
-  }
+}
 
-  .dark-mode {
-    animation: dark 0.5s forwards;
-    color: #FFFFFF;
-  }
-  .light-mode {
-    animation: light 0.5s forwards;
-    color: #000000;
-  }
-
-  @keyframes light {
-    0% {
-      background-color: #000000;
-    }
-  
-    100% {
-      background-color: #FFFFFF;
-    }
-  }
-
-  @keyframes dark {
-    0% {
-      background-color: #FFFFFF;
-    }
-    
-    100% {
-      background-color: #000000;
-    }
-  }
-
-  .selected {
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    animation: slide 2s forwards;
-    cursor: pointer;
-  }
-
-  .off {
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    cursor: pointer;
-    background-color: #202425;
-  }
-  
-  @keyframes slide {
-    0% {
-      background-color: #202425;
-    }
-  
-    100% {
-      background-color: #373e44;
-    }
-
-  }
-
-  .worked-dark:hover{
-    background-color: rgba(0, 17, 20, 0.3);
-  }
-
-  .worked-light:hover{
-    background-color: rgba(200, 200, 200, 0.1);
-  }
+.worked:hover{
+  background-color: var(--hoverWorked)
+}
 
 `
 
@@ -97,9 +54,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <NextThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </NextThemeProvider>
     </>
   )
 }
