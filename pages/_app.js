@@ -13,12 +13,18 @@ const GlobalStyle = createGlobalStyle`
   --background: #FFFFFF;
   --foreground: #000000;
   --hoverWorked: rgb(185 194 195 / 10%);
+  --backgroundThemeLight: #FFF;
+  --backgroundThemeDark: #2f3232;
+  --stateOfDay: #f7f7b8;
 }
 
 [data-theme='dark']{
   --background: #000000;
   --foreground: #FFFFFF;
   --hoverWorked: rgb(22 21 21 / 10%);
+  --backgroundThemeDark: #000;
+  --backgroundThemeLight: #2f3232;
+  --stateOfDay: #120c56;
 }
 
 body {
@@ -38,8 +44,45 @@ img{
     display: block; 
 }
 
+.worked{
+  width: 40%;
+  height: auto; 
+  border-radius: 10px; 
+  padding: 20px; 
+  cursor: pointer;
+}
+
 .worked:hover{
-  background-color: var(--hoverWorked)
+  background-color: var(--hoverWorked);
+}
+
+button{
+  border: none;
+  background-color: #2f3232;
+}
+
+.selectDarkMode{
+  background-color: var(--backgroundThemeDark);
+  border-radius: 100%;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectlightMode{
+  background-color: var(--backgroundThemeLight);
+  border-radius: 100%;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sky{
+  height: 300px;
+  background:var(--background);
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 `

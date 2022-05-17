@@ -11,7 +11,7 @@ const Header = styled.header`
     position: sticky;
     top: 0;
     left: 0;
-    background-color: var(--background)
+    background-color: var(--background);
 `
 
 export default Header;
