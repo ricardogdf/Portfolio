@@ -10,6 +10,14 @@ import { useTheme } from 'next-themes'
 
 export default function Home() {
   const { setTheme } = useTheme()
+  const zeroFill = n => {
+    return ('0' + n).slice(-2);
+  }
+  const interval = setInterval(() => {
+    const now = new Date();
+    const dataHora = zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes());
+    document.getElementById('time').innerHTML = dataHora;
+  }, 1000);
   return (
     <>
       <Header>
@@ -72,7 +80,7 @@ export default function Home() {
               Minha experiência profissional:
             </Text>
             <Flex style={{ alignItems: 'center', justifyContent: 'space-between', marginTop: '60px' }}>
-              <Box className='worked' >
+              <Box className='worked' style={{ marginLeft: '-20px' }} >
                 <Link href='./ricardo' style={{ textDecoration: 'none' }}>
                   <Text>
                     MadeiraMadeira
@@ -101,9 +109,12 @@ export default function Home() {
             </Flex>
           </Box>
         </Box>
+        <Flex className='development'>
+          <TextSub as='span'>...</TextSub>
+        </Flex>
         <Flex className="sky">
-          <TextSub as='span'>Araucária, PR - Brazil</TextSub>
-          <TextSub as='span' >Araucária, PR - Brazil</TextSub>
+          <TextSub as='span'>Araucária, PR - Brasil</TextSub>
+          <TextSub as='span' id='time'></TextSub>
         </Flex>
       </Container>
     </>

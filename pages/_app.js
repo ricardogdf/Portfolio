@@ -77,12 +77,20 @@ button{
   align-items: center;
 }
 
+.development{
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 10px 0;
+}
+
 .sky{
-  height: 300px;
+  height: 100px;
+  flex-direction: column;
   background:var(--background);
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  line-height: 2;
 }
 
 `
