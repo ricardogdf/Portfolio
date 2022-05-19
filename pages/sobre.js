@@ -62,24 +62,33 @@ export default function Sobre() {
                     <Text>Meu nome é Ricardo, tenho 17 anos, comecei a estudar assuntos relacionados a programação aproximadamente no segundo semestre de 2020 e comecei a trabalhar na área em fevereiro de 2021 como menor aprendiz desenvolvedor na <Link href='https://www.madeiramadeira.com.br/'>MadeiraMadeira</Link>. Desde que comecei aprendi muitas coisas sem dúvida, tanto em conhecimento de código que eu evolui extremamente, como também melhorei muito minhas habilidades em me comunicar e aprender.</Text>
                     <TextSub style={{ margin: '60px 0 15px 0' }}>Mais sobre mim</TextSub>
                     <Text>Além de programar, meus hobbies se baseiam em jogos <Link href='https://tecnoblog.net/responde/o-que-sao-jogos-fps/'>FPS</Link> online, assistir séries e filmes de ficção científica, fazer origamis e principalmente assistir animes.</Text>
-                    <Text>Claramente para aprender tudo que eu sei, não foi sozinho tive comigo pessoas que me ajudaram e me ensinaram muito, dentre elas alguns fizeram mais diferença para minha evolução, que são elas:</Text>
+                    <Text>Claramente para aprender tudo que eu sei, não foi sozinho tive comigo pessoas que me ajudaram e me ensinaram muito, tanto para evolução profissional como pessoal, dentre elas alguns fizeram mais diferença para minha evolução, que são elas:</Text>
                 </Box>
                 <Box className='mentions'>
                     <Text className='name'>Leonardo Gonçalves da Fonseca</Text>
-                    <Text className='description'>Grande contribuidor para tudo que conquistei e sigo conquistando, devido a todo apoio e confiança que ele sempre depositou em mim. Grande inspiração de persistência, disciplina e superação. Além de um grande mentor, companheiro e irmão. Grande inspiração como pessoa e profissional. Farmacêutico, formado em farmácia e cursando especialização em Data Science.</Text>
+                    <Text className='description'>Grande contribuidor para tudo que conquistei e sigo conquistando, devido a todo apoio e confiança que ele sempre depositou em mim. A importância dele na minha vida não é mensurada em meras palavras, dado que ele esteve sempre comigo em todos os momentos difíceis, estando sempre me apoiando e ajudando a superá-los. Grande inspiração de persistência, disciplina e superação. Além de um grande mentor, companheiro e irmão. Grande inspiração como pessoa e profissional. Farmacêutico, formado em farmácia e cursando especialização em Data Science.</Text>
                     <Box className='boxSocialMedias'>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/leo_gnclvs/'>leo_gnclvs</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/leo_gnclvs/'>@leo_gnclvs</a ></Flex></Flex>
                         <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.linkedin.com/in/leonardo-gon%C3%A7alves-da-fonseca/'>Leonardo Gonçalves da Fonseca</a ></Flex></Flex>
                         <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://cafeconscientia.com.br/'>cafeconscientia.com.br</a ></Flex></Flex>
                     </Box>
                 </Box>
                 <Box className='mentions'>
                     <Text className='name'>Patrick Gonçalves Lima</Text>
-                    <Text className='description'>Uma das maiores inspirações tanto de pessoa como de profissional. Desde sempre apoiou e acreditou em tudo que eu fazia, vindo dele o incentivo inicial para eu ingressar nessa área que tanto amo hoje. Começando desde instigar os primeiros estudos na área até confiar no meu potencial para me indicar para meu primeiro emprego. Grande amigo, mentor, inspiração e irmão de consideração. Desenvolvedor Front-end sênior, bacharelado em Sistemas da Informação, especializado em Data Science e Big Data e cursando especialização em Data Science</Text>
+                    <Text className='description'>Uma das maiores inspirações tanto de pessoa como de profissional. Desde sempre apoiou e acreditou em tudo que eu fazia, vindo dele o incentivo inicial para eu ingressar nessa área que tanto amo hoje. Começando desde instigar os primeiros estudos na área até confiar no meu potencial para me indicar para meu primeiro emprego. Referência que levo para meu futuro, além de um grande amigo, mentor e irmão de consideração. Desenvolvedor Front-end sênior, bacharelado em Sistemas da Informação, especializado em Data Science e Big Data e cursando especialização em Data Science</Text>
                     <Box className='boxSocialMedias'>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/patrick.gl/'>patrick.gl</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/patrick.gl/'>@patrick.gl</a ></Flex></Flex>
                         <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.linkedin.com/in/patrickgdl/'>Patrick Lima</a ></Flex></Flex>
                         <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.patricklima.dev/'>patricklima.dev</a ></Flex></Flex>
+                    </Box>
+                </Box>
+                <Box className='mentions'>
+                    <Text className='name'>Giovane Ferreira</Text>
+                    <Text className='description'>Uma grande inspiração como profissional e pessoa, sendo uma das maiores referências para mim na área da programação. Devido ao contato constante com o time, tive muito apoio e ensinamentos vindo da parte dele, desde códigos complexos à apoiar constantemente a buscar novas comunicações para melhora desse quesito tão importante. Grande amigo, companheiro de trabalho e inspiração. Desenvolvedor Full-Stack sênior, Tecnólogo em Análise e Desenvolvimento de Sistemas e Tecnólogo, Análise e Pós-graduação em Sistemas Embarcados e Internet das Coisas.</Text>
+                    <Box className='boxSocialMedias'>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/giovane_f/'>@giovane_f</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.linkedin.com/in/giovaneferreira/'>Giovane Ferreira</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://giovaneferreira.com.br/'>giovaneferreira.com.br</a ></Flex></Flex>
                     </Box>
                 </Box>
                 <footer>
