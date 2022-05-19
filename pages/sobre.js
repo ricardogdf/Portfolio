@@ -86,9 +86,9 @@ export default function Sobre() {
                     <Text className='name'>Giovane Ferreira</Text>
                     <Text className='description'>Uma grande inspiração como profissional e pessoa, sendo uma das maiores referências para mim na área da programação. Devido ao contato constante com o time, tive muito apoio e ensinamentos vindo da parte dele, desde códigos complexos à apoiar constantemente a buscar novas comunicações para melhora desse quesito tão importante. Grande amigo, companheiro de trabalho e inspiração. Desenvolvedor Full-Stack sênior, Tecnólogo em Análise e Desenvolvimento de Sistemas e Pós-graduação em Sistemas Embarcados e Internet das Coisas.</Text>
                     <Box className='boxSocialMedias'>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/giovane_f/'>@giovane_f</a ></Flex></Flex>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.linkedin.com/in/giovaneferreira/'>Giovane Ferreira</a ></Flex></Flex>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://giovaneferreira.com.br/'>giovaneferreira.com.br</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <a className='linkSocialMedias' href='https://www.instagram.com/giovane_f/'>@giovane_f</a ></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><a className='linkSocialMedias' href='https://www.linkedin.com/in/giovaneferreira/'>Giovane Ferreira</a ></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><a className='linkSocialMedias' href='https://giovaneferreira.com.br/'>giovaneferreira.com.br</a ></Flex>
                     </Box>
                 </Box>
                 <footer>

@@ -117,18 +117,13 @@ button{
   margin-bottom: 20px;
 }
 
-.socialMedias{
-  width: 100%;
-  justify-content: center;
-}
-
 .linkSocialMedias{
   color: var(--foreground)
   margin: 10px 0 0 40px;
 }
 
 .nameSocialMedias{
-  width: 80px;
+  width: 90px;
 }
 `
 
