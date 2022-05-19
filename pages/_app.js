@@ -3,6 +3,7 @@ import { ThemeProvider as NextThemeProvider } from 'next-themes'
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 *{
   margin: 0;
@@ -28,11 +29,11 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  font-family: 'Playfair Display', serif;
-    background-color: var(--background);
-    color: var(--foreground);
-    font-weight: 500;
-    font-size: 18px
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-weight: 500;
+  font-size: 18px
 }
 
 svg path {
@@ -119,6 +120,7 @@ button{
 .socialMedias{
   width: 100%;
   justify-content: center;
+  font-family: 'Playfair Display', serif;
 }
 
 .linkSocialMedias{
