@@ -77,9 +77,9 @@ export default function Sobre() {
                     <Text className='name'>Patrick Gonçalves Lima</Text>
                     <Text className='description'>Uma das maiores inspirações tanto de pessoa como de profissional. Desde sempre apoiou e acreditou em tudo que eu fazia, vindo dele o incentivo inicial para eu ingressar nessa área que tanto amo hoje. Começando desde instigar os primeiros estudos na área até confiar no meu potencial para me indicar para meu primeiro emprego. Grande amigo, mentor, inspiração e irmão de consideração. Desenvolvedor Front-end sênior, bacharelado em Sistemas da Informação, especializado em Data Science e Big Data e cursando especialização em Data Science</Text>
                     <Box className='boxSocialMedias'>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><Link className='linkSocialMedias' href='https://www.instagram.com/patrick.gl/'>patrick.gl</Link></Flex></Flex>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><Link className='linkSocialMedias' href='https://www.linkedin.com/in/patrickgdl/'>Patrick Lima</Link></Flex></Flex>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><Link className='linkSocialMedias' href='https://www.patricklima.dev/'>patricklima.dev</Link></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/patrick.gl/'>patrick.gl</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.linkedin.com/in/patrickgdl/'>Patrick Lima</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.patricklima.dev/'>patricklima.dev</a ></Flex></Flex>
                     </Box>
                 </Box>
                 <footer>
