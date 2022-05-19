@@ -68,9 +68,9 @@ export default function Sobre() {
                     <Text className='name'>Leonardo Gonçalves da Fonseca</Text>
                     <Text className='description'>Grande contribuidor para tudo que conquistei e sigo conquistando, devido a todo apoio e confiança que ele sempre depositou em mim. Grande inspiração de persistência, disciplina e superação. Além de um grande mentor, companheiro e irmão. Grande inspiração como pessoa e profissional. Farmacêutico, formado em farmácia e cursando especialização em Data Science.</Text>
                     <Box className='boxSocialMedias'>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><Link className='linkSocialMedias' href='https://www.instagram.com/leo_gnclvs/'>leo_gnclvs</Link></Flex></Flex>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><Link className='linkSocialMedias' href='https://www.linkedin.com/in/leonardo-gon%C3%A7alves-da-fonseca/'>Leonardo Gonçalves da Fonseca</Link></Flex></Flex>
-                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><Link className='linkSocialMedias' href='https://cafeconscientia.com.br/'>cafeconscientia.com.br</Link></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Instagram:</Box> <Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.instagram.com/leo_gnclvs/'>leo_gnclvs</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Linkedin:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://www.linkedin.com/in/leonardo-gon%C3%A7alves-da-fonseca/'>Leonardo Gonçalves da Fonseca</a ></Flex></Flex>
+                        <Flex className='mbMedias'><Box className='nameSocialMedias'>Site:</Box><Flex className='socialMedias'><a className='linkSocialMedias' href='https://cafeconscientia.com.br/'>cafeconscientia.com.br</a ></Flex></Flex>
                     </Box>
                 </Box>
                 <Box className='mentions'>

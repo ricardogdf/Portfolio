@@ -120,7 +120,6 @@ button{
 .socialMedias{
   width: 100%;
   justify-content: center;
-  font-family: 'Playfair Display', serif;
 }
 
 .linkSocialMedias{
