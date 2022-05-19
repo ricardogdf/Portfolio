@@ -2,7 +2,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { ThemeProvider as NextThemeProvider } from 'next-themes'
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
 *{
   margin: 0;
@@ -28,10 +28,11 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Playfair Display', serif;
     background-color: var(--background);
     color: var(--foreground);
     font-weight: 500;
+    font-size: 18px
 }
 
 svg path {
@@ -93,6 +94,41 @@ button{
   line-height: 2;
 }
 
+
+.mentions{
+  margin-top: 100px;
+}
+
+.name{
+  margin-bottom: 20px;
+}
+
+.description{
+  margin-bottom: 20px;
+  color: #687076;
+}
+
+.boxSocialMedias{
+  margin-top: 40px
+}
+
+.mbMedias{
+  margin-bottom: 20px;
+}
+
+.socialMedias{
+  width: 100%;
+  justify-content: center;
+}
+
+.linkSocialMedias{
+  color: var(--foreground)
+  margin: 10px 0 0 40px;
+}
+
+.nameSocialMedias{
+  width: 80px;
+}
 `
 
 const theme = {

@@ -20,6 +20,7 @@ export default function Home() {
   }, 1000);
   return (
     <>
+      <title>Ricardo Gonçalves</title>
       <Header>
         <Flex style={{ gap: '10px' }}>
           <a href='https://github.com/ricardogdf'>
@@ -72,7 +73,7 @@ export default function Home() {
               No momento estou trabalhando como Assistente de desenvolvimento na <Link href='https://www.madeiramadeira.com.br/'>MadeiraMadeira</Link>, um dos 16 unicórnios brasileiros.
             </Text>
             <Text style={{ marginTop: '15px' }}>
-              Outros assuntos que estou estudando e trabalhando <Link href='https://www.madeiramadeira.com.br/'>agora</Link>
+              Atualmente focado em JavaScript e React. Clique <Link href='./now'>aqui</Link> para ver outros assuntos que estou estudando no momento.
             </Text>
           </Box>
           <Box style={{ marginTop: '120px' }}>
