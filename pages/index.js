@@ -73,7 +73,7 @@ export default function Home() {
               No momento estou trabalhando como Assistente de desenvolvimento na <Link href='https://www.madeiramadeira.com.br/'>MadeiraMadeira</Link>, um dos 16 unicórnios brasileiros.
             </Text>
             <Text style={{ marginTop: '15px' }}>
-              Atualmente focado em JavaScript e React. Clique <Link href='./now'>aqui</Link> para ver outros assuntos que estou estudando no momento.
+              Atualmente focado em JavaScript e React. Mas estou sempre buscando novos conhecimentos em outras partes de tecnologia.
             </Text>
           </Box>
           <Box style={{ marginTop: '120px' }}>
@@ -82,20 +82,7 @@ export default function Home() {
             </Text>
             <Flex style={{ alignItems: 'center', justifyContent: 'space-between', marginTop: '60px' }}>
               <Box className='worked' style={{ marginLeft: '-20px' }} >
-                <Link href='./ricardo' style={{ textDecoration: 'none' }}>
-                  <Text>
-                    MadeiraMadeira
-                  </Text>
-                  <Text style={{ marginTop: '15px', color: '#687076', fontSize: '18px', }}>
-                    Jovem aprendiz desenvolvedor
-                  </Text>
-                  <TextSub style={{ paddingTop: '5px' }}>
-                    Fevereiro 2021 - Fevereiro 2022
-                  </TextSub>
-                </Link>
-              </Box>
-              <Box className='worked' >
-                <Link href='./ricardo' style={{ textDecoration: 'none' }}>
+                <Link href='./devAssist' style={{ textDecoration: 'none' }}>
                   <Text>
                     MadeiraMadeira
                   </Text>
@@ -104,6 +91,19 @@ export default function Home() {
                   </Text>
                   <TextSub style={{ paddingTop: '5px' }}>
                     Março 2022 - Atualmente
+                  </TextSub>
+                </Link>
+              </Box>
+              <Box className='worked' >
+                <Link href='./jovemAprendiz' style={{ textDecoration: 'none' }}>
+                  <Text>
+                    MadeiraMadeira
+                  </Text>
+                  <Text style={{ marginTop: '15px', color: '#687076', fontSize: '18px', }}>
+                    Jovem aprendiz desenvolvedor
+                  </Text>
+                  <TextSub style={{ paddingTop: '5px' }}>
+                    Fevereiro 2021 - Fevereiro 2022
                   </TextSub>
                 </Link>
               </Box>
