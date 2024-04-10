@@ -1,27 +1,21 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import Header from "../src/components/Header";
-import Flex from "../src/components/Flex";
-import TextSub from "../src/components/TextSub";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pixelify+Sans:wght@400..700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
         <body>
-          <Header />
           <Main />
           <NextScript />
-
-          <footer>
-            <Flex className="development">
-              <TextSub as="span">...</TextSub>
-            </Flex>
-            <Flex className="sky">
-              <TextSub as="span">Araucária, PR - Brasil</TextSub>
-            </Flex>
-          </footer>
         </body>
       </Html>
     );

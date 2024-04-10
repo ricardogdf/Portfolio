@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { ThemeProvider as NextThemeProvider } from "next-themes";
+import Layout from "../src/components/layout";
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -10,24 +11,28 @@ const GlobalStyle = createGlobalStyle`
 :root{
   --background: #FFFFFF;
   --foreground: #000000;
-  --backgroundThemeLight: #FFF;
-  --backgroundThemeDark: #2f3232;
-  --colorLinks: #F0E68C;
-  --stateOfDay: #f7f7b8;
+  --colorLinks: linear-gradient(
+    25deg,
+    #fa3cf9 1.7%,
+    #fc587e 50.85%,
+    #fc3239 99.99%
+  );
 }
 
 [data-theme='dark']{
   --background: #000000;
   --foreground: #FFFFFF;
-  --backgroundThemeDark: #000;
-  --backgroundThemeLight: #2f3232;
-  --colorLinks: #4B0082;
-  --stateOfDay: #120c56;
+  --colorLinks: linear-gradient(
+    25deg,
+    #fa3cf9 1.7%,
+    #fc587e 50.85%,
+    #fc3239 99.99%
+  );
 }
 
 body {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 400;
   font-style: normal;
   background-color: var(--background);
   color: var(--foreground);
@@ -36,7 +41,7 @@ body {
   padding: 30px 0;
 }
 
-svg path {
+.iconsSocialMedias svg path {
   fill: var(--foreground)
 }
 
@@ -48,23 +53,6 @@ img{
 
 button{
   border: none;
-  background-color: #2f3232;
-}
-
-.selectDarkMode{
-  background-color: var(--backgroundThemeDark);
-  border-radius: 100%;
-  padding: 2px;
-  justify-content: center;
-  align-items: center;
-}
-
-.selectlightMode{
-  background-color: var(--backgroundThemeLight);
-  border-radius: 100%;
-  padding: 2px;
-  justify-content: center;
-  align-items: center;
 }
 
 .development{
@@ -127,7 +115,9 @@ export default function App({ Component, pageProps }) {
       <GlobalStyle />
       <NextThemeProvider>
         <ThemeProvider theme={theme}>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ThemeProvider>
       </NextThemeProvider>
     </>

@@ -24,7 +24,7 @@ export default function Home() {
           constantemente evoluindo e desenvolvendo meus conhecimentos e
           habilidades. Além disso, busco um time e projeto que me inspirem a
           estar sempre melhorando. Conheça mais{" "}
-          <Link href="./sobre">sobre mim</Link>
+          <Link href="/sobre">sobre mim</Link>
         </Text>
         <Box style={{ marginTop: "60px" }}>
           <TextSub>Atualmente</TextSub>
@@ -42,7 +42,7 @@ export default function Home() {
             novos conhecimentos em outras areas de tecnologia.
           </Text>
         </Box>
-        <Box style={{ marginTop: "120px" }}>
+        <Box style={{ marginTop: "60px" }}>
           <Text>Minha experiência profissional:</Text>
           <Flex
             style={{
