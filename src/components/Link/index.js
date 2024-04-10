@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Link = styled.a`
-    color: #f58220;
-`
+  color: var(--colorLinks);
+`;
 
 export default Link;
